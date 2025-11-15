@@ -1,0 +1,324 @@
+/*
+ * Color Palette (Earth Tones):
+ * --color-primary: #8B4513 (Saddle Brown)
+ * --color-secondary: #D2B48C (Tan)
+ * --color-accent: #A0522D (Sienna)
+ * --color-text: #333333 (Dark Grey)
+ * --color-light-bg: #F8F4E3 (Creamy White/Light Beige)
+ * --color-white: #FFFFFF
+ */
+
+:root {
+    --color-primary: #A0522D; /* Sienna - Main Accent */
+    --color-secondary: #D2B48C; /* Tan - Button/Hover */
+    --color-accent: #8B4513; /* Saddle Brown - Strong Accent */
+    --color-text: #333333;
+    --color-light-bg: #F8F4E3; /* Creamy White */
+    --color-white: #FFFFFF;
+}
+
+/* Global Styles and Typography  */
+body {
+    font-family: 'Lato', sans-serif; /* Professional, clean sans-serif for body */
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Classic, readable serif for headings */
+    color: var(--color-accent);
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--color-light-bg);
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: 1.5em;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul a {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+header ul a:hover {
+    color: var(--color-primary);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+}
+
+.primary-btn:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+/* --- Home/Hero Section --- */
+.hero {
+    background-color: var(--color-light-bg);
+    text-align: center;
+    padding: 150px 0;
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 10px 0;
+    color: var(--color-accent);
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--color-text);
+    margin-bottom: 30px;
+}
+
+/* --- About Me Section --- */
+#about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    border: 5px solid var(--color-secondary);
+    /* Placeholder for images, icons, or graphics [cite: 14] */
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* --- Skills Section --- */
+.education ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skills-list {
+    margin-top: 30px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+/* --- Projects/Portfolio Section --- */
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--color-white);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-card .description {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card .tech {
+    font-style: italic;
+    font-size: 0.85em;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.project-link {
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.secondary-link {
+    color: var(--color-text);
+}
+
+.secondary-link:hover {
+    color: var(--color-primary);
+}
+
+/* --- Contact/Footer --- */
+footer {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+footer h2 {
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #f0f0f0;
+}
+
+footer .btn {
+    margin: 20px 0;
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+footer .btn:hover {
+    background-color: var(--color-primary);
+}
+
+.footer-links a {
+    color: var(--color-light-bg);
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: var(--color-white);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    header .container {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 5px 10px;
+    }
+}

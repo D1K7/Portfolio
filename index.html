@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Kashyap - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght=300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <h1>[Your Name/Initials]</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <p>Hello, I'm</p>
+            <h1>Dhruv Kashyap</h1>
+            <h2>Student</h2>
+            
+        </div>
+    </section>
+
+    <section id="about" class="container section-padding">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Profile.JPG" alt="Your Profile Picture" class="profile-img">
+            <div class="about-text">
+                <p>Hi I'm Dhruv Kashyap from New Delhi, passionate about Coding, Maths and AIML. I am always keen and enthusiastic about develping new skills and learning. Currently studying B.Tech CSE at DTU(1st Year)</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dhruv-kashyap-455495396/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/D1K7" target="_blank">GitHub</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2>Education & Skills</h2>
+
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li>CLASS 10 - 89% The Indian School</li>
+                    <li>CLASS 12 - 92% The Indian School</li>
+                    <li>DTU CSE 2025-2029</li>
+
+                    
+                </ul>
+            </div>
+
+            <div class="skills-list">
+                <h3>Technical Skills</h3>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Python: Pandas, Numpy</span>
+                <span class="skill-tag">C/C++</span>
+                
+                </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container section-padding">
+        <h2>Projects & Portfolio</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                
+                <h3>Encoding Types</h3>
+                <p class="description">Implementing different encoding methods used for training data in machine learning</p>
+                <p class="tech">Technologies: Python, Pandas, Numpy</p>
+                <a href="https://github.com/D1K7/encoding_types" target="_blank" class="project-link secondary-link">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2_placeholder.jpg" alt="Project 2 Image">
+                <h3>Project Title Two</h3>
+                <p class="description">[BRIEF DESCRIPTION OF PROJECT TWO ]</p>
+                <p class="tech">Technologies: Python, Flask, SQL</p>
+                <a href="[PROJECT_LIVE_LINK]" target="_blank" class="project-link">View Live</a>
+                <a href="[PROJECT_GITHUB_LINK]" target="_blank" class="project-link secondary-link">GitHub</a>
+            </div>
+
+            </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities, and my inbox is always open.</p>
+            <a href="mailto:dhruvkashyap1701@gmail.com" class="btn primary-btn">dhruvkashyap1701@gmail.com</a>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/dhruv-kashyap-455495396/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/D1K7" target="_blank">GitHub</a> |
+                <a href="tel:+918595809293">+91 8595809293</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Dhruv Kashyap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
